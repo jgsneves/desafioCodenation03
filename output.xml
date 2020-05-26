@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="1" failures="0" hostname="DEV-S1-T5" name="pytest" skipped="0" tests="1" time="0.144" timestamp="2020-05-26T14:47:51.743173"><testcase classname="" file="test_main.py" name="test_main" time="0.000"><error message="collection failure">ImportError while importing test module &apos;C:\Users\JoaoNeves\codenation\python-7\test_main.py&apos;.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+..\..\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\python.py:511: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+..\..\AppData\Local\Programs\Python\Python38\lib\site-packages\py\_path\local.py:701: in pyimport
+    __import__(modname)
+..\..\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\assertion\rewrite.py:152: in exec_module
+    exec(co, module.__dict__)
+test_main.py:1: in &lt;module&gt;
+    import main
+main.py:1: in &lt;module&gt;
+    import requests
+E   ModuleNotFoundError: No module named &apos;requests&apos;</error></testcase></testsuite></testsuites>
