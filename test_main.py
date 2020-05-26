@@ -31,3 +31,14 @@ def test_positive_latitude(get_mock):
     result = 30
     response = main.get_temperature(lat, lng)
     assert response == result
+
+
+@patch('main.requests.get')
+def test_negative_lng(get_mock):
+    temperature = {"currently": {"temperature": 75.20}}
+    get_mock.return_value.json.return_value = temperature
+    lat = 0
+    lng = -150
+    result = 24
+    response = main.get_temperature(lat, lng)
+    assert response == result
