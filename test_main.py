@@ -20,3 +20,14 @@ def test_server_is_offline(get_mock):
     response = main.get_response(lat, lng)
     status = response.status_code
     assert status == 500
+
+
+@patch('main.requests.get')
+def test_positive_latitude(get_mock):
+    temperature = {"currently": {"temperature": 86}}
+    get_mock.return_value.json.return_value = temperature
+    lat = 60
+    lng = 0
+    result = 30
+    response = main.get_temperature(lat, lng)
+    assert response == result
