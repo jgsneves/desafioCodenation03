@@ -1,3 +1,7 @@
+<h1 align=center>
+<img src="https://raw.githubusercontent.com/jgsneves/desafioCodenation/master/codenation.png" />
+</h1>
+
 # Desafio de programação orientada a testes
 
 Dark sky é um serviço de previsão do tempo por API. Temos uma função que faz uma requisição para a api
